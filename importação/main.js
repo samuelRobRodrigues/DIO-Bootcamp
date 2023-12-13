@@ -1,5 +1,12 @@
 const { gets, print } = require('./importação');
 
-// object destructuring = destruir o objeto ?
+let maiorValorEncontrado = 0;
 
-print(gets());
+for (let i = 0; i < 5; i++) {
+    const numeroSorteado = gets();
+    if (numeroSorteado > maiorValorEncontrado) {
+        maiorValorEncontrado = numeroSorteado
+    }
+}
+
+print(maiorValorEncontrado);

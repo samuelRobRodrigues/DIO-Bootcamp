@@ -1,7 +1,11 @@
 // aprendendo get e print no bootcamp da DIO.
+const entradas = [5, 50, 10,73, 23];
+let i = 0;
 
 function gets() {
-    return 10;
+    const valor = entradas[i];
+    i++;
+    return valor;
 }
 
 function print(texto) {
